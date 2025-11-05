@@ -12,7 +12,7 @@
     "build:all": "npm run build:frontend && npm run build:backend",
     "start": "node backend/server-production.js",
     "start:railway": "node backend/server-railway.js",
-    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev": "node backend/server-production.js",
     "dev:backend": "cd backend && npm run dev",
     "dev:frontend": "cd frontend && npm run dev",
     "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
