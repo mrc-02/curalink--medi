@@ -19,7 +19,7 @@ const getApiUrl = () => {
   }
   
   // In development (localhost), use env variable or default localhost
-  return import.meta.env.VITE_API_URL || 'http://localhost:5000/api'
+  return import.meta.env.VITE_API_URL || 'https://curalink-medi.onrender.com'
 }
 
 // Check if we're in demo mode by checking health endpoint
