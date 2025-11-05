@@ -33,7 +33,7 @@ class RealtimeService {
 
     try {
       // Only use Socket.IO in development
-      const apiUrl = import.meta.env.VITE_API_URL?.replace('/api', '') || 'http://localhost:5000'
+      const apiUrl = import.meta.env.VITE_API_URL?.replace('/api', '') || 'https://curalink-medi.onrender.com'
       
       this.socket = io(apiUrl, {
         auth: {
